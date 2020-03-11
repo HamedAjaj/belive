@@ -329,8 +329,8 @@ input[type=text]:placeholder,input[type=password]:focus {
 
     <!-- Login Form -->
     <form method="post" action="">
-      <input type="text" id="login" class="fadeIn second" name="email" placeholder="login">
-      <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
+      <input type="text" id="login" class="fadeIn second" name="email" placeholder="login"  maxlength="50" required>
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="password" maxlength="50" required>
       <input type="submit" class="fadeIn fourth" value="Log In" name="submit">
     </form>
     <?php

@@ -117,7 +117,11 @@
               {
                   echo'<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">'.$_SESSION['name'].'</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="logout.php">Logout</a>
             </li>';
+                  
               }
               else
               {
@@ -129,8 +133,9 @@
               <a class="nav-link js-scroll-trigger" href="#team">signup</a>
             </li>';
                   
-              }
-                ?>
+              }  
+              ?>
+              
           </ul>
         </div>
       </div>
@@ -491,21 +496,21 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input class="form-control" id="name" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name.">
+										<input class="form-control" id="name" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name." maxlength="50">
 										<p class="help-block text-danger"></p>
 									</div>
 									<div class="form-group">
-										<input class="form-control" id="email" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address.">
+										<input class="form-control" id="email" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address." maxlength="50">
 										<p class="help-block text-danger"></p>
 									</div>
 									<div class="form-group">
-										<input class="form-control" id="phone" type="tel" placeholder="Your Phone" required="required" data-validation-required-message="Please enter your phone number.">
+										<input class="form-control" id="phone" type="tel" placeholder="Your Phone" required="required" data-validation-required-message="Please enter your phone number." maxlength="30">
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<textarea class="form-control" id="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+										<textarea class="form-control" id="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message." maxlength="500"></textarea>
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
